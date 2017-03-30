@@ -22,7 +22,7 @@ dependencies {
 3. BadgeView
 
 ### Example Preview
-[[https://github.com/apg-mobile/android-round-textview/blob/master/preview.png|alt=octocat]]
+![alt text](https://github.com/apg-mobile/android-round-textview/blob/master/preview.png)
 
 ### Example Usage
 ```xml
