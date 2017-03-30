@@ -22,7 +22,7 @@ dependencies {
 3. BadgeView
 
 ### Example Preview
-[[https://photos.google.com/share/AF1QipMSJR72kBHOrQHY5uLA0PiGzh4PRQBvrGMvmZFO7R-aP-vLc_PrwnettFvqHjx64g/photo/AF1QipMjRwGJfW4_qA0GA3kjKOzEDrjhFZ84Yn8v2mXX?key=WlhZM29hVGhRd05oeGRrdk9OaGFHVnBuZlNIMFRR|alt=octocat]]
+[[android-round-textview/preview.png|alt=octocat]]
 
 ### Example Usage
 ```xml
