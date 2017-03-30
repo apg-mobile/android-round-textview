@@ -10,6 +10,6 @@ allprojects {
 }
   
 dependencies {
-	compile 'com.github.apg-mobile:android-round-textview:-SNAPSHOT'
+	compile 'com.github.apg-mobile:android-round-textview:v0.0.1'
 }
 ````
