@@ -10,4 +10,36 @@
         <attr name="allCorner" format="dimension"/>
     </declare-styleable>
 
+    <declare-styleable name="BadgeView">
+        <attr name="mainText" format="string"/>
+        <attr name="mainTextColor" format="color"/>
+        <attr name="mainTextSize" format="dimension"/>
+        <attr name="mainBgColor" format="color"/>
+        <attr name="mainTopLeftCorner" format="dimension"/>
+        <attr name="mainTopRightCorner" format="dimension"/>
+        <attr name="mainBottomRightCorner" format="dimension"/>
+        <attr name="mainBottomLeftCorner" format="dimension"/>
+        <attr name="mainAllCorner" format="dimension"/>
+        <attr name="subText" format="string"/>
+        <attr name="subTextColor" format="color"/>
+        <attr name="subTextSize" format="dimension"/>
+        <attr name="subBgColor" format="color"/>
+        <attr name="subTopLeftCorner" format="dimension"/>
+        <attr name="subTopRightCorner" format="dimension"/>
+        <attr name="subBottomRightCorner" format="dimension"/>
+        <attr name="subBottomLeftCorner" format="dimension"/>
+        <attr name="subAllCorner" format="dimension"/>
+        <attr name="subMarginLeft" format="dimension"/>
+        <attr name="subMarginTop" format="dimension"/>
+        <attr name="subMarginRight" format="dimension"/>
+        <attr name="subMarginBottom" format="dimension"/>
+        <attr name="subMargin" format="dimension"/>
+        <attr name="subPaddingLeft" format="dimension"/>
+        <attr name="subPaddingTop" format="dimension"/>
+        <attr name="subPaddingRight" format="dimension"/>
+        <attr name="subPaddingBottom" format="dimension"/>
+        <attr name="subPadding" format="dimension"/>
+
+    </declare-styleable>
+
 </resources>

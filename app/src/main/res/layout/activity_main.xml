@@ -2,89 +2,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.apg.mobile.roundtextviewsample.MainActivity">
 
+    <com.apg.mobile.roundtextview.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="Round me up !"
+        android:textColor="#fff"
+        app:allCorner="16dp"
+        app:bgColor="#456432" />
 
     <com.apg.mobile.roundtextview.RoundLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="4dp"
-        android:paddingEnd="8dp"
-        android:paddingStart="8dp"
-        android:paddingTop="4dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
         app:allCorner="16dp"
-        app:bgColor="#ffae00">
+        app:bgColor="#EA3238">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ขอที่อยู่"
-                android:textColor="@android:color/white" />
+                android:text="Round Any View Group"
+                android:textColor="#fff" />
 
-            <com.apg.mobile.roundtextview.RoundTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginStart="4dp"
-                android:paddingBottom="4dp"
-                android:paddingEnd="8dp"
-                android:paddingStart="8dp"
-                android:paddingTop="4dp"
-                android:text="+ 2"
-                android:textColor="@android:color/white"
-                app:allCorner="10dp"
-                app:bgColor="#96000000" />
-
-        </LinearLayout>
+        </RelativeLayout>
 
     </com.apg.mobile.roundtextview.RoundLayout>
 
-    <com.apg.mobile.roundtextview.RoundLayout
+    <com.apg.mobile.roundtextview.BadgeView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:paddingBottom="4dp"
-        android:paddingEnd="8dp"
-        android:paddingStart="8dp"
-        android:paddingTop="4dp"
-        app:allCorner="16dp"
-        app:bgColor="#ffae00">
+        android:layout_marginTop="8dp"
+        app:mainAllCorner="30dp"
+        app:mainText="Wait for transfer"
+        app:subAllCorner="30dp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <com.apg.mobile.roundtextview.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:mainAllCorner="30dp"
+        app:mainBgColor="#598dd0"
+        app:mainText="Ask for address"
+        app:subAllCorner="30dp"
+        app:subText="+ 2" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ขอที่อยู่"
-                android:textColor="@android:color/white" />
+    <com.apg.mobile.roundtextview.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:mainAllCorner="30dp"
+        app:mainBgColor="#6407c1"
+        app:mainText="A very very long long tag g g g g"
+        app:subAllCorner="30dp" />
 
-            <com.apg.mobile.roundtextview.RoundTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginStart="4dp"
-                android:paddingBottom="4dp"
-                android:paddingEnd="8dp"
-                android:paddingStart="8dp"
-                android:paddingTop="4dp"
-                android:text="+ 2"
-                android:textColor="@android:color/white"
-                app:allCorner="10dp"
-                app:bgColor="#96000000" />
 
-        </LinearLayout>
-
-    </com.apg.mobile.roundtextview.RoundLayout>
+    <com.apg.mobile.roundtextview.BadgeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:mainAllCorner="30dp"
+        app:mainBgColor="#bab8bc"
+        app:mainText="A very very long long tag g g g g"
+        app:subAllCorner="30dp"
+        app:subText="+ 2" />
 
 </LinearLayout>
