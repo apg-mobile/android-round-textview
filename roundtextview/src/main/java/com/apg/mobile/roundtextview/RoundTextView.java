@@ -57,31 +57,6 @@ public class RoundTextView extends AppCompatTextView {
         }
     }
 
-    private Drawable getCornerDrawable() {
-
-        if (tvAllCorner >= 0) {
-            tvTopLeftCorner = tvAllCorner;
-            tvTopRightCorner = tvAllCorner;
-            tvBottomRightCorner = tvAllCorner;
-            tvBottomLeftCorner = tvAllCorner;
-        }
-
-        float[] outerR = new float[8];
-        outerR[0] = tvTopLeftCorner;
-        outerR[1] = tvTopLeftCorner;
-        outerR[2] = tvTopRightCorner;
-        outerR[3] = tvTopRightCorner;
-        outerR[4] = tvBottomRightCorner;
-        outerR[5] = tvBottomRightCorner;
-        outerR[6] = tvBottomLeftCorner;
-        outerR[7] = tvBottomLeftCorner;
-
-        ShapeDrawable drawable = new ShapeDrawable();
-        drawable.setShape(new RoundRectShape(outerR, null, null));
-        drawable.getPaint().setColor(tvBgColor);
-        return drawable;
-    }
-
     public void setCorner(int all) {
         tvAllCorner = all;
         setViewBackground();
@@ -101,10 +76,25 @@ public class RoundTextView extends AppCompatTextView {
     }
 
     private void setViewBackground() {
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            setBackground(getCornerDrawable());
+
+        Drawable drawable;
+
+        if (tvAllCorner > 0) {
+            drawable = DrawableHelper.getCornerDrawable(
+                    tvAllCorner,
+                    tvAllCorner,
+                    tvAllCorner,
+                    tvAllCorner,
+                    tvBgColor);
         } else {
-            setBackgroundDrawable(getCornerDrawable());
+            drawable = DrawableHelper.getCornerDrawable(
+                    tvTopLeftCorner,
+                    tvTopRightCorner,
+                    tvBottomLeftCorner,
+                    tvBottomRightCorner,
+                    tvBgColor);
         }
+
+        DrawableHelper.setRoundBackground(this, drawable);
     }
 }

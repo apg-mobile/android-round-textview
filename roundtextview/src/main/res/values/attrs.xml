@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <declare-styleable name="TextViewCorner">
         <attr name="bgColor" format="color"/>
         <attr name="topLeftCorner" format="dimension"/>
@@ -8,4 +9,5 @@
         <attr name="bottomLeftCorner" format="dimension"/>
         <attr name="allCorner" format="dimension"/>
     </declare-styleable>
+
 </resources>
