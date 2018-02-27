@@ -168,6 +168,10 @@ public class BadgeView extends RoundLayout {
         setBgColor(mainBgColor);
     }
 
+    public String getBadgeMainText() {
+        return tvBadgeMessage.getText().toString();
+    }
+
     public void setBadgeMainText(String text) {
         tvBadgeMessage.setText(text);
     }
@@ -178,6 +182,10 @@ public class BadgeView extends RoundLayout {
 
     public void setBadgeMainTextColor(@ColorInt int color) {
         tvBadgeMessage.setTextColor(color);
+    }
+
+    public String getBadgeSubText() {
+        return rtvBadgeAmount.getText().toString();
     }
 
     public void setBadgeSubText(String text) {
